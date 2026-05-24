@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 98%;
+    --foreground: 142 71% 10%;
+    --primary: 142 76% 26%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 142 50% 95%;
+    --secondary-foreground: 142 71% 18%;
+    --muted: 142 20% 95%;
+    --muted-foreground: 142 20% 40%;
+    --accent: 142 50% 90%;
+    --accent-foreground: 142 71% 18%;
+    --border: 142 20% 88%;
+    --ring: 142 76% 36%;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: #f0fdf4;
+    color: #14532d;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-green-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors duration-200 inline-flex items-center gap-2;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-green-800 text-green-800 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition-colors duration-200 inline-flex items-center gap-2;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-green-100 overflow-hidden;
+  }
+
+  .badge-best {
+    @apply bg-green-800 text-white text-xs font-bold px-3 py-1 rounded-full;
+  }
+
+  .badge-kategorie {
+    @apply bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold text-green-900 mb-2;
+  }
+
+  .section-subtitle {
+    @apply text-green-700 text-lg mb-10;
+  }
+}
