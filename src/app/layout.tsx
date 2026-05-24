@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     description:
       "Unabhängige Tests und Vergleiche für Smart Home Geräte. Finden Sie den besten Saugroboter, Luftreiniger oder Smart Thermostat.",
   },
+  other: {
+    "google-adsense-account": "ca-pub-7676593353613357",
+  },
 };
 
 export default function RootLayout({
